@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Insertion_sortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-17T09:02:40" hostname="DESKTOP-VAL3U2F" time="0.001">
+  <properties/>
+  <testcase name="test1" classname="Insertion_sortTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
