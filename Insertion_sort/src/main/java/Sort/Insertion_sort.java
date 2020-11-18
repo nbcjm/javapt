@@ -30,6 +30,15 @@ public class Insertion_sort {
         }
         return sortedlist;
     }
+    public static Vector<Integer> sortmethod(Vector<Integer> List,int i){
+       int key,j;
+       key=List.get(i);
+       for(j=i-1;j>=0&&List.get(j)>key;j--){
+           List.set(j+1,List.get(j));
+       }
+       List.set(j+1,key);
+       return List;
+    }
 }
 
  /*

@@ -32,8 +32,10 @@ public class Insertion_sortTest {
     }
     @Test
     public void test1(){
+        //List
         Vector<Integer> L1 = new Vector<Integer>(Arrays.asList(5, 7, 2, 4, 7));
-        Vector<Integer> RightL1 = new Vector<Integer>(Arrays.asList(2,4,5,7,7));
+        //correct sorted List
+        Vector<Integer> RightL1 = new Vector<Integer>(Arrays.asList(2, 4, 5, 7, 7));
         Vector<Integer> L2 = new Vector<Integer>(Arrays.asList(0, 3, 3, 1, 1));
         Vector<Integer> RightL2 = new Vector<Integer>(Arrays.asList(0, 1, 1, 3, 3));
         Vector<Integer> L3 = new Vector<Integer>(Arrays.asList(6, 0, 5, 7, 6));
@@ -59,5 +61,13 @@ public class Insertion_sortTest {
         assertEquals(Insertion_sort.sortmethod(L1),RightL1);
         assertEquals(Insertion_sort.sortmethod(L1),RightL1);
         assertEquals(Insertion_sort.sortmethod(L1),RightL1);
+        Vector<Integer> S1 = new Vector<Integer>(Arrays.asList(5,7,2,4,7));
+        Vector<Integer> S2 = new Vector<Integer>(Arrays.asList(2,5,7,4,7));
+        Vector<Integer> S3 = new Vector<Integer>(Arrays.asList(2,4,5,7,7));
+        Vector<Integer> S4 = new Vector<Integer>(Arrays.asList(2,4,5,7,7));
+        assertEquals(Insertion_sort.sortmethod(S1,1),S1);
+        assertEquals(Insertion_sort.sortmethod(S1,2),S2);
+        assertEquals(Insertion_sort.sortmethod(S1,3),S3);
+        assertEquals(Insertion_sort.sortmethod(S1,4),S4);
     }
 }
