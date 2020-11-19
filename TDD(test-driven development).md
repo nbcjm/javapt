@@ -31,8 +31,8 @@ Code Coverage는 작성된 소스 코드가 얼마나 실행 되었는지를 지
 
 * Function coverage
 
-  * Function coverage는 어떤 function이 최소한 한 번은 실행되었는 가를 측정한다.
-  * Function call을 했는지만을 확인하기 때문에 function 안의 모든 코드가 실행되었는가는 확인할 수 없다.
+  * Function coverage는 어떤 함수가 최소한 한 번은 실행되었는 가를 측정한다.
+  * Function call을 했는지만을 확인하기 때문에 함수 안의 모든 코드가 실행되었는가는 확인할 수 없다.
 
 * Statement coverage
 
@@ -51,7 +51,35 @@ Code Coverage는 작성된 소스 코드가 얼마나 실행 되었는지를 지
     *p = 123;
     ~~~
 
-* Branch coverage
+* Branch coverage(Decision coverage)
 
   * Brarnch coverage는 조건 분기문이 참/거짓으로 모두 실행되었는지를 측정한다.
+  
+  * (+) Statement coverage와 비슷하나 단점을 보완하며 Coverage들 중 비교적 간단한 편이다.
+  
+  * (-) 다음과 같은 코드에서 condition2가 참이 될 경우 function() 이 테스트되지 않는 경우가 발생한다.
+  
+    ~~~java
+    if(condition1 && (condition2 || function()))
+    ~~~
+  
+     
+
+* Condition coverage
+
+  * Condition coverage는 Branch coverage와 비슷하나 조건 분기문에 있는 모든 expersion들의 참/거짓을 모두 확인함으로 단점을 보완했다.
+
+  * 예로 다음과 같은 코드에서 각각 모든 condition의 참/거짓인 경우를 확인한다.
+
+    ~~~c++
+    if(condition1 || condition2 && condition3)
+    ~~~
+
+* Path coverage
+
+  * Path coverage는 각  함수에서 모든 path를 실행해봤는지를 확인한다, 반복문은 일정한 횟수까지만 반복한다.
+  * (+) 세밀한 코드 테스트가 가능하다.
+  * (-) Path의 수가 굉장히 많다.
+
+  
 
