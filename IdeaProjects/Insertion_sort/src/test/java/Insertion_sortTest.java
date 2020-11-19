@@ -18,10 +18,10 @@ public class Insertion_sortTest {
         Vector<Integer> round2list = new Vector<Integer>(Arrays.asList(1,6,9,8,3));
         Vector<Integer> round3list = new Vector<Integer>(Arrays.asList(1,6,8,9,3));
         Vector<Integer> round4list = new Vector<Integer>(Arrays.asList(1,3,6,8,9));
-        assertEquals(round1list,insertion_sort.sortmethod(baselist,1));
-        assertEquals(round2list,insertion_sort.sortmethod(baselist,2));
-        assertEquals(round3list,insertion_sort.sortmethod(baselist,3));
-        assertEquals(round4list,insertion_sort.sortmethod(baselist,4));
+        assertEquals(round1list,insertion_sort.sortmethodpart1(baselist,1));
+        assertEquals(round2list,insertion_sort.sortmethodpart1(baselist,2));
+        assertEquals(round3list,insertion_sort.sortmethodpart1(baselist,3));
+        assertEquals(round4list,insertion_sort.sortmethodpart1(baselist,4));
 
 
     }
