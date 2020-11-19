@@ -3,8 +3,6 @@ package Sort;
 import java.util.*;
 public class Insertion_sort {
 
-    static Random random = new Random();
-
     public Vector<Integer> sortmethod(Vector<Integer> List){
         Vector<Integer> sortedList = new Vector<Integer>();
         sortedList.clear();
@@ -12,11 +10,6 @@ public class Insertion_sort {
         Sort : for(Integer key : List) {
 
             for (int i = 0; i < sortedList.size(); i++) {
-
-                if (sortedList.get(0) == null) {
-                    sortedList.add(key);
-                    continue;
-                }
 
                 if (key<sortedList.get(i)){
                     sortedList.add(i,key);
@@ -40,11 +33,6 @@ public class Insertion_sort {
             for (int i = 0; i < sortedList.size(); i++) {
 
                 if (nowround>=setround) continue;
-
-                if (sortedList.get(0) == null) {
-                    sortedList.add(key);
-                    continue;
-                }
 
                 if (key<sortedList.get(i)){
                     sortedList.add(i,key);
